@@ -31,16 +31,7 @@ let config: HardhatUserConfig = {
         gasPrice: 0.5 * 10 ** 9,
         gas: 8000000,
       },
-    coverage: {
-      url: "http://127.0.0.1:8555",
-    },
-    ropsten: {
-      url: process.env.ALCHEMY_API_ROPSTEN,
-      gasPrice: ethers.utils.parseUnits("1.01", "gwei").toNumber(),
-      accounts: {
-        mnemonic: process.env.MNEMONIC_TEST_ACCOUNT,
-      },
-    },
+    }
   },
   paths: {
     artifacts: "./build/artifacts",
