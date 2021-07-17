@@ -17,12 +17,22 @@ dotenv.config()
 let config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   networks: {
+      mainnet: {
+        url: 'https://forno.celo.org',
+        chainId: 1,
+        live: true,
+        gasPrice: 0.5 * 10 ** 9,
+        gas: 8000000,
+      },
+      alfajores: {
+        url: 'https://alfajores-forno.celo-testnet.org',
+        chainId: 44787,
+        live: true,
+        gasPrice: 0.5 * 10 ** 9,
+        gas: 8000000,
+      },
     coverage: {
       url: "http://127.0.0.1:8555",
-    },
-    mainnet: {
-      url: process.env.ALCHEMY_API,
-      gasPrice: 30 * 1000000000,
     },
     ropsten: {
       url: process.env.ALCHEMY_API_ROPSTEN,
