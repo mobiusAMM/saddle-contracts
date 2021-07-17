@@ -1,4 +1,4 @@
-# saddle-contract
+# thotheon-contracts
 
 [![codecov](https://codecov.io/gh/saddle-finance/saddle-contract/branch/master/graph/badge.svg?token=CI26SD9SGE)](https://codecov.io/gh/saddle-finance/saddle-contract)
 [![CI](https://github.com/saddle-finance/saddle-contract/workflows/CI/badge.svg)](https://github.com/saddle-finance/saddle-contract/actions?query=workflow%3ACI)
